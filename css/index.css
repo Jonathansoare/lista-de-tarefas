@@ -1,0 +1,55 @@
+:root{
+    --primary-color: rgb(0, 61, 80);
+    --segund-color: white;
+}
+*{
+    box-sizing: border-box;
+    outline: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+    font-size: 1.3em;
+    line-height: 1.5em;
+    color: black;
+}
+.container{
+    max-width: 640px;
+    margin: 10px auto;
+    background-color: var(--segund-color);
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 15px;
+} 
+
+.time{
+    font-size: 3em;
+}
+
+.pause{
+    color: red;
+    animation: anima 0.8s linear  infinite;
+}
+
+.btn button{
+    width: 190px;
+    height: 30px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes anima{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0.9;
+    }
+
+}
